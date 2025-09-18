@@ -10,4 +10,4 @@ d5 = (num // 10000) % 10
 
 
 
-print (d1,d2,d3,d4,d5)
+print (d1,d2,d3,d4,d5, sep="")
