@@ -1,10 +1,15 @@
-num = int(input("Enter 5-digit number: "))
+x = float(input("First number: "))
+op = input("Operation (+, -, *, /): ")
+y = float(input("Second number: "))
 
-d1 = num % 10
-d2 = (num // 10) % 10
-d3 = (num // 100) % 10
-d4 = (num // 1000) % 10
-d5 = (num // 10000) % 10
-
-print(d1, d2, d3, d4, d5, sep="")
-
+if op == "+":
+    print("Result:", x + y)
+elif op == "-":
+    print("Result:", x - y)
+elif op == "*":
+    print("Result:", x * y)
+elif op == "/":
+    if x == 0:
+        print("Error:Cannot divide by zero!")
+    else:
+        print("Result:", x / y)
