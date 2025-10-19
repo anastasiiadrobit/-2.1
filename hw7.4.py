@@ -4,3 +4,4 @@ def common_elements():
     return multiples_of_3 & multiples_of_5
 
 assert common_elements() == {0, 15, 30, 45, 60, 75, 90}
+
