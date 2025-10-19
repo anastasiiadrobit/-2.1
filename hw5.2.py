@@ -23,5 +23,5 @@ while True:
 
     choice = input("Do you want to continue? (y): ").strip().lower()
     if choice not in ('y',):
-        print("Calculator session ended.".center(50, "-"))
+        print("Calculator session ended.")
         break
