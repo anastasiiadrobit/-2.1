@@ -1,4 +1,8 @@
-def difference(*args):
+def difference(*args: float) -> float:
+    """
+    Функція повертає різницю між найбільшим і найменшим числом серед переданих аргументів.
+    Якщо аргументів немає — повертає 0.
+    """
     return round(max(args) - min(args), 2) if args else 0
 
 
