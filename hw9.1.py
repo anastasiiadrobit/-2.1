@@ -1,4 +1,8 @@
-def popular_words(text, words):
+def popular_words(text: str, words: list[str]) -> dict[str, int]:
+    """
+    Функція рахує, скільки разів кожне слово зі списку words зустрічається в тексті text.
+    Пошук виконується без урахування регістру.
+    """
     text = text.lower().split()
     return dict(map(lambda w: (w, text.count(w)), words))
 
